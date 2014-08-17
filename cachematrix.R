@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## R Programming Assignment 2
+## A pair of functions to cache the calculation of the 
+## inverse of a matrix
 
-## Write a short comment describing this function
+## This function takes a matrix (defaulting to the empty matrix)
+## and returns a list of functions that operate on this data.
 
 makeCacheMatrix <- function(x = matrix()) {
 	i <- NULL
@@ -24,7 +26,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function returns the inverse of the matrix argument "x"
+## If the inverse has been cached, it will return the cached data.
+## Otherwise it will call "solve" and set the inverse on the argument "x"
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
